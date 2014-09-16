@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [[ "$#" != "1" ]]; then
+  echo "Usage: setup_ctmod_links -a ... set absolute symbolic links"
+  echo "       setup_ctmod_links -r ... set relative symbolic links"
+  exit 1
+fi
+
+rm -f material spectra detector phantom data
+if [[ "$1" == "-a" ]]; then
+  # absolute symbolic links
+  ln -s $CTMODSYS/material material
+  ln -s $CTMODSYS/spectra spectra
+  ln -s $CTMODSYS/detector detector
+  ln -s $CTMODSYS/phantom phantom
+  ln -s $CTMODSYS/data data
+elif [[ "$1" == "-r" ]]; then
+  # relative symbolic links
+  ln -s $($CTMODSYS/bin/printRelativePath $CTMODSYS/material) material
+  ln -s $($CTMODSYS/bin/printRelativePath $CTMODSYS/spectra) spectra
+  ln -s $($CTMODSYS/bin/printRelativePath $CTMODSYS/detector) detector
+  ln -s $($CTMODSYS/bin/printRelativePath $CTMODSYS/phantom) phantom
+  ln -s $($CTMODSYS/bin/printRelativePath $CTMODSYS/data) data
+else
+  echo "Error: setup_ctmod_links: Unknown option. Use -a or -r."
+  exit 2
+fi

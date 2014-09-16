@@ -1,0 +1,5 @@
+#!/usr/bin/perl
+
+use File::Spec;
+$rel_path = File::Spec->abs2rel(@ARGV[0]);
+printf("%s\n", $rel_path);

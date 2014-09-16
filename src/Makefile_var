@@ -1,0 +1,31 @@
+### ROOT-independent source files
+
+SRC    = TVpMaterial.cc TVpMaterialGridData.cc TVpMaterialManager.cc \
+         TVpMaterialFileData.cc TVpMaterialDefaults.cc \
+         TVpVoxelArray.cc  TVpSpectrum.cc \
+         TVpPointDetector.cc TVpPointDetectorArray.cc \
+         TVpPointDetectorArrayPlanar.cc TVpPointDetectorArrayCylindrical.cc \
+         TVpParticle.cc TVpPhoton.cc \
+         TVpSourcePlaneFanBeam.cc TVpSourcePlaneFanBeam2.cc \
+         TVpSourceCylinderFanBeam.cc TVpSourceCylinderFanBeam2.cc \
+         TVpSourceIso.cc TVpSource.cc \
+	 TVpBowTieFilterCylinder.cc TVpBowTieFilter1dTable.cc \
+	 TVpBowTieFilterSomatomDefinition.cc \
+         TVpMath.cc  TVpVector3.cc TVpMatrix3x3.cc TVpIntegral.cc \
+         TVpPitch.cc TVpPitchHelical.cc TVpPitchSequential.cc \
+         TVpGeometry.cc TVpSetupTomograph.cc TVpSetupDetector.cc \
+         TVpSolid.cc TVpBox.cc TVpSphere.cc TVpEllipsoid.cc TVpCylinder.cc \
+	 TVpSolidNeighbor.cc TVpObjectLocation.cc misc.cc TVpSinogram.cc \
+	 TVpDetectorResponse.cc TVpSolidStatistics.cc \
+         TVpRunManager.cc TVpRunManagerTomograph.cc TVpRunManagerDetector.cc \
+         TVpAntiscatterGrid.cc TVpVolumeIntegrator.cc \
+         TVpRandom.cc TVpRandom2.cc TVpRandom3.cc TVpConstant.cc \
+	 TVpDimensionsTomograph.cc TVpBeamHardeningCorrection.cc AVpAbout.cc \
+	 TVpRectangleCut.cc TVpPalette.cc TVpSolidTester.cc
+#	 TVpBeamHardeningCorrection2.cc
+
+### All headers
+HDRS   = $(SRC:.cc=.h)
+
+### Object files
+OBJ = $(addprefix obj/, $(SRC:.cc=.o))
