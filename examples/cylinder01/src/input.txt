@@ -1,0 +1,4 @@
+1000	#_Number_of_simulated_photons
+8	#_Cylinder_radius_in_cm
+25	#_Cylinder_height_in_cm
+0.2	#_Beam_width_in_cm
