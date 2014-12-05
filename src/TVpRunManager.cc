@@ -421,7 +421,7 @@ void TVpRunManager::PrintCtmodRunFile()
 
 
 //______________________________________________________________________________
-void TVpRunManager::PedEventInitialize(Char_t *fileName)
+void TVpRunManager::PedEventInitialize(const Char_t *fileName)
 {
   // Create a ROOT tree.  The branch address is initialized to an external
   // object.
@@ -446,7 +446,7 @@ void TVpRunManager::PedEventClose()
 }
 
 //______________________________________________________________________________
-void TVpRunManager::FomEventInitialize(Char_t *fileName)
+void TVpRunManager::FomEventInitialize(const Char_t *fileName)
 {
   // Create a ROOT tree.  The branch address is initialized to an external
   // object.

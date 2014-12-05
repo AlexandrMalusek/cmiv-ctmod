@@ -80,7 +80,7 @@ class TVpPointDetector : public TVpObjectLocation
 
   enum EDrawOption {kDrawPoint = 1, kDrawAxes = 2};
   void             Draw(Int_t option = kDrawPoint) const;
-  void             DedEventInitialize(Char_t *fileName);
+  void             DedEventInitialize(const Char_t *fileName);
   void             DedEventClose();
   TH1F            *GetHistEnergySpectrum() const;
 

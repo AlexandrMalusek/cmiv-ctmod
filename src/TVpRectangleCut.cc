@@ -190,7 +190,7 @@ TH2F *TVpRectangleCut::RegisterSourceParticle(TVpSource *source, Long_t nparticl
 }
 
 //______________________________________________________________________________
-Int_t TVpRectangleCut::WriteLac(Char_t *filename, TVpGeometry *geometry,
+Int_t TVpRectangleCut::WriteLac(const Char_t *filename, TVpGeometry *geometry,
 				Double_t energy, Int_t ndivision)
 {
   // Write LAC
@@ -199,7 +199,7 @@ Int_t TVpRectangleCut::WriteLac(Char_t *filename, TVpGeometry *geometry,
 }
 
 //______________________________________________________________________________
-Int_t TVpRectangleCut::WriteMCSSum(Char_t *filename, TVpGeometry *geometry,
+Int_t TVpRectangleCut::WriteMCSSum(const Char_t *filename, TVpGeometry *geometry,
 				   Double_t energy, Int_t csSum, Int_t ndivision)
 {
   // Write Macroscopic Cross Section (MCS) Sum

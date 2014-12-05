@@ -267,7 +267,7 @@ void TVpDetectorResponse::SetAntiscatterGrid(TVpAntiscatterGrid *antiscatterGrid
 }
 
 //______________________________________________________________________________
-Int_t TVpDetectorResponse::ReadAerFile(Char_t *fileName)
+Int_t TVpDetectorResponse::ReadAerFile(const Char_t *fileName)
 {
   // Read AER file.
   //

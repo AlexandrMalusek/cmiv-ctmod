@@ -27,7 +27,7 @@ class TVpDetectorResponse : public TObject
   inline Double_t  GetGridEnergy(Int_t iEnergy) const;
   inline Int_t     GetDimXi() const;
   inline Int_t     GetDimEnergy() const;
-  Int_t            ReadAerFile(Char_t *fileName);
+  Int_t            ReadAerFile(const Char_t *fileName);
   void             SetAntiscatterGrid(TVpAntiscatterGrid *antiscatterGridPtr);
   virtual void     PrintStatus(std::ostream &out = std::cout) const;
   

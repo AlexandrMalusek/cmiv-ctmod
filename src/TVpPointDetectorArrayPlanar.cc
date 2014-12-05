@@ -66,7 +66,7 @@ TVpPointDetectorArrayPlanar::TVpPointDetectorArrayPlanar
 }
 
 //______________________________________________________________________________
-TVpPointDetectorArrayPlanar::TVpPointDetectorArrayPlanar(Char_t *fileName)
+TVpPointDetectorArrayPlanar::TVpPointDetectorArrayPlanar(const Char_t *fileName)
 {
   // Constructor.  Initialize data members from a file.
   //
@@ -114,7 +114,7 @@ void TVpPointDetectorArrayPlanar::SetDefaultPosition()
 
 //______________________________________________________________________________
 Int_t TVpPointDetectorArrayPlanar::WritePdaFile
-(Char_t *fileName, Int_t withErrors)
+(const Char_t *fileName, Int_t withErrors)
 {
   // Write the file in PDAC format
 
@@ -144,7 +144,7 @@ Int_t TVpPointDetectorArrayPlanar::WritePdaFile
 }
 
 //______________________________________________________________________________
-Int_t TVpPointDetectorArrayPlanar::ReadPdaFile(Char_t *fileName)
+Int_t TVpPointDetectorArrayPlanar::ReadPdaFile(const Char_t *fileName)
 {
   // Read the file in PDAP format
 

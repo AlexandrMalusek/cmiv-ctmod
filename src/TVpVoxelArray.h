@@ -70,9 +70,9 @@ class TVpVoxelArray : public TVpBox
   
  public:
   TVpVoxelArray();
-  TVpVoxelArray(Char_t *name, Int_t index, Int_t nx, Int_t ny, Int_t nz,
+  TVpVoxelArray(const Char_t *name, Int_t index, Int_t nx, Int_t ny, Int_t nz,
 		Double_t sizeX, Double_t sizeY, Double_t sizeZ);
-  TVpVoxelArray(Char_t *fileNameVAM, Char_t *name = "voxel array", Int_t index = 0);
+  TVpVoxelArray(const Char_t *fileNameVAM, const Char_t *name = "voxel array", Int_t index = 0);
   virtual           ~TVpVoxelArray();
   inline Int_t      GetNX() const;
   inline Int_t      GetNY() const;
@@ -108,9 +108,9 @@ class TVpVoxelArray : public TVpBox
   void              SetScoreEnergyImpartedOn(Int_t option);
   void              SetScoreEnergyImpartedOff(Int_t option);
 
-  Int_t         ReadVPFile(Char_t *filename, Int_t verbose = 0);
-  Int_t         ReadPGMFile(Char_t *filePrefix, Int_t verbose = 0);
-  void          WritePGMZ(Char_t *filePrefix);
+  Int_t         ReadVPFile(const Char_t *filename, Int_t verbose = 0);
+  Int_t         ReadPGMFile(const Char_t *filePrefix, Int_t verbose = 0);
+  void          WritePGMZ(const Char_t *filePrefix);
 	 
   TH2S         *GetMatIndSliceX(Int_t slice) const;
   TH2S         *GetMatIndSliceY(Int_t slice) const;
@@ -175,8 +175,8 @@ class TVpVoxelArray : public TVpBox
   void          RotateY90();
   void          RotateZ90();
 
-  Int_t         WriteVAMFile(Char_t *fileName);
-  Int_t         WriteVANFile(Char_t *fileName);
+  Int_t         WriteVAMFile(const Char_t *fileName);
+  Int_t         WriteVANFile(const Char_t *fileName);
 
   ClassDef(TVpVoxelArray,1) // Geometry solid: a voxel array
 };

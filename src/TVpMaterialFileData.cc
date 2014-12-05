@@ -461,7 +461,7 @@ TGraph *TVpMaterialFileData::GetGraphFileData(EFileData fileData) const
 }
 
 //______________________________________________________________________________
-void TVpMaterialFileData::DrawGraphFileData(EFileData fileData, Char_t *opt) const
+void TVpMaterialFileData::DrawGraphFileData(EFileData fileData, const Char_t *opt) const
 {
   // Draw graph
 

@@ -27,7 +27,7 @@ TVpSinogram::~TVpSinogram()
 }
 
 //______________________________________________________________________________
-Int_t TVpSinogram::WriteFile(Char_t *fileName)
+Int_t TVpSinogram::WriteFile(const Char_t *fileName)
 {
   // Write sinogram to the file fileName
 
@@ -85,7 +85,7 @@ void TVpSinogram::CalculateScatter(Long_t numOfHistories)
 }
 
 //______________________________________________________________________________
-TH2F *TVpSinogram::GetProbImage(Char_t *hname)
+TH2F *TVpSinogram::GetProbImage(const Char_t *hname)
 {
   // Return 2D image
   
@@ -100,7 +100,7 @@ TH2F *TVpSinogram::GetProbImage(Char_t *hname)
 }
 
 //______________________________________________________________________________
-TH2F *TVpSinogram::GetWopImage(Char_t *hname)
+TH2F *TVpSinogram::GetWopImage(const Char_t *hname)
 {
   // Return 2D image
   

@@ -14,12 +14,12 @@ class TVpPointDetectorArrayPlanar : public TVpPointDetectorArray
   TVpPointDetectorArrayPlanar
     (Double_t arraySizeX, Double_t arraySizeY, Int_t nx, Int_t ny, Int_t numOfChannels,
      Double_t minEnergy, Double_t maxEnergy, TVpDetectorResponse *detectorResponse = 0);
-  TVpPointDetectorArrayPlanar(Char_t *fileName);
+  TVpPointDetectorArrayPlanar(const Char_t *fileName);
   virtual ~TVpPointDetectorArrayPlanar() {};
   void     PrintStatus(std::ostream &out = std::cout) const;
   Int_t    GetType() const {return 1;}
-  Int_t    WritePdaFile(Char_t *fileName, Int_t withErrors = 0);
-  Int_t    ReadPdaFile(Char_t *fileName);
+  Int_t    WritePdaFile(const Char_t *fileName, Int_t withErrors = 0);
+  Int_t    ReadPdaFile(const Char_t *fileName);
   TVpPointDetectorArray* Clone(Int_t numDivX = 1, Int_t numDivY = 1) const;
   void     SetDefaultPosition();
 

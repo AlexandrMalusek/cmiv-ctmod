@@ -49,7 +49,7 @@ TVpPointDetectorArrayCylindrical::TVpPointDetectorArrayCylindrical
 }
 
 //______________________________________________________________________________
-TVpPointDetectorArrayCylindrical::TVpPointDetectorArrayCylindrical(Char_t *fileName)
+TVpPointDetectorArrayCylindrical::TVpPointDetectorArrayCylindrical(const Char_t *fileName)
 {
   // Constructor.  Initialize data members from a file.
   //
@@ -100,7 +100,7 @@ void TVpPointDetectorArrayCylindrical::SetDefaultPosition()
 
 //______________________________________________________________________________
 Int_t TVpPointDetectorArrayCylindrical::WritePdaFile
-(Char_t *fileName, Int_t withErrors)
+(const Char_t *fileName, Int_t withErrors)
 {
   // Write the file in PDAC format
 
@@ -131,7 +131,7 @@ Int_t TVpPointDetectorArrayCylindrical::WritePdaFile
 }
 
 //______________________________________________________________________________
-Int_t TVpPointDetectorArrayCylindrical::ReadPdaFile(Char_t *fileName)
+Int_t TVpPointDetectorArrayCylindrical::ReadPdaFile(const Char_t *fileName)
 {
   // Read the file in PDAC format
 

@@ -39,7 +39,7 @@ class TVpPointDetectorArray : public TVpObjectLocation
   TVpPointDetectorArray
     (Int_t nx, Int_t ny, Int_t numOfChannels, Double_t minEnergy, Double_t maxEnergy,
      TVpDetectorResponse *detectorResponse = 0);
-  TVpPointDetectorArray(Char_t *fileName);
+  TVpPointDetectorArray(const Char_t *fileName);
   virtual ~TVpPointDetectorArray();
   
   inline Int_t      GetIndex(Int_t iy, Int_t ix) const;
@@ -57,12 +57,12 @@ class TVpPointDetectorArray : public TVpObjectLocation
   inline Int_t      GetNumOfDetectors() const;
   virtual void      PrintStatus(std::ostream &out = std::cout) const;
   virtual Int_t     GetType() const {return 0;}
-  virtual Int_t     WritePdaFile(Char_t *fileName, Int_t withErrors = 0);
+  virtual Int_t     WritePdaFile(const Char_t *fileName, Int_t withErrors = 0);
   virtual Int_t     WritePdaFile(FILE *fp, Int_t withErrors = 0);
-  virtual Int_t     ReadPdaFile(Char_t *fileName);
+  virtual Int_t     ReadPdaFile(const Char_t *fileName);
   virtual Int_t     ReadPdaFile(FILE *fp);
-  Int_t             WriteValuesToTabFile(Char_t *fileName);
-  Int_t             WriteErrorsToTabFile(Char_t *fileName);
+  Int_t             WriteValuesToTabFile(const Char_t *fileName);
+  Int_t             WriteErrorsToTabFile(const Char_t *fileName);
   void              SetScoredQuantity(TVpPointDetector::EScoredQuantity scoredQuantity);
   virtual TVpPointDetectorArray* Clone(Int_t numDivX = 1, Int_t numDivY = 1) const { return 0;};
   void              Zero();
@@ -79,7 +79,7 @@ class TVpPointDetectorArray : public TVpObjectLocation
   virtual TH2F   *GetImage(Int_t isRotated = 0) const;
   virtual TH1F   *GetYProfile(Int_t slice, Int_t isCm = 0, const Char_t *name = 0) const;
   virtual TGraph *GetYProfileGraph(Int_t slice, Int_t isCm = 0, const Char_t *name = 0) const;
-  inline void     DedEventInitialize(Int_t ix, Int_t iy, Char_t *fileName);
+  inline void     DedEventInitialize(Int_t ix, Int_t iy, const Char_t *fileName);
   inline void     DedEventClose(Int_t ix, Int_t iy);
   TH1F           *GetHistEnergySpectrum(Int_t ix, Int_t iy) const;
 
@@ -188,7 +188,7 @@ inline void TVpPointDetectorArray::RegisterVirtualPhoton(TVpGeometry *geometry,
 }
 
 //______________________________________________________________________________
-void TVpPointDetectorArray::DedEventInitialize(Int_t ix, Int_t iy, Char_t *fileName)
+void TVpPointDetectorArray::DedEventInitialize(Int_t ix, Int_t iy, const Char_t *fileName)
 {
   // Initialize collection of data for the point detector (ix, iy)
 

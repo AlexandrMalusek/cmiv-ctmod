@@ -469,7 +469,7 @@ void TVpPointDetector::Draw(Int_t option) const
 }
 
 //______________________________________________________________________________
-void TVpPointDetector::DedEventInitialize(Char_t *fileName)
+void TVpPointDetector::DedEventInitialize(const Char_t *fileName)
 {
   // Create a ROOT tree.  The branch address is initialized to an external
   // object.

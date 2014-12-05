@@ -164,7 +164,7 @@ void TVpSourcePlaneFanBeam::Draw(Int_t option, Int_t nParticles) const
   // in the direction of the beam's axis.
   
   TVpSource::Draw(option, nParticles);
-  if (option & TVpSource::kDrawShape != 0)
+  if ((option & TVpSource::kDrawShape) != 0)
     {
       // FIX
     }

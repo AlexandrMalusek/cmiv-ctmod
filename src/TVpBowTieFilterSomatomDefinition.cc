@@ -25,7 +25,7 @@ TVpBowTieFilterSomatomDefinition::TVpBowTieFilterSomatomDefinition()
 }
 
 //______________________________________________________________________________
-TVpBowTieFilterSomatomDefinition::TVpBowTieFilterSomatomDefinition(Char_t *fileNameBFT,
+TVpBowTieFilterSomatomDefinition::TVpBowTieFilterSomatomDefinition(const Char_t *fileNameBFT,
 								   TVpMaterial *matTiPtr)
 {
   // Create the bowtie filter object.

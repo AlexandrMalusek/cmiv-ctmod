@@ -19,12 +19,12 @@ class TVpPointDetectorArrayCylindrical : public TVpPointDetectorArray
     (Double_t arrayWidth, Double_t arrayLength, Double_t arrayRadius,
      Int_t na, Int_t nr, Int_t numOfChannels, Double_t minEnergy,
      Double_t maxEnergy, TVpDetectorResponse *detectorResponse = 0);
-  TVpPointDetectorArrayCylindrical(Char_t *fileName);
+  TVpPointDetectorArrayCylindrical(const Char_t *fileName);
   virtual ~TVpPointDetectorArrayCylindrical() {};
   void     PrintStatus(std::ostream &out = std::cout) const;
   Int_t    GetType() const {return 2;}
-  Int_t    WritePdaFile(Char_t *fileName, Int_t withErrors = 0);
-  Int_t    ReadPdaFile(Char_t *fileName);
+  Int_t    WritePdaFile(const Char_t *fileName, Int_t withErrors = 0);
+  Int_t    ReadPdaFile(const Char_t *fileName);
   TVpPointDetectorArray* Clone(Int_t numDivX = 1, Int_t numDivY = 1) const;
   void     SetDefaultPosition();
 

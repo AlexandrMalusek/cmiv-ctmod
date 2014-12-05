@@ -128,7 +128,7 @@ TVpVoxelArray::TVpVoxelArray()
 }
 
 //______________________________________________________________________________
-TVpVoxelArray::TVpVoxelArray(Char_t *name, Int_t index,Int_t nx, Int_t ny, Int_t nz,
+TVpVoxelArray::TVpVoxelArray(const Char_t *name, Int_t index,Int_t nx, Int_t ny, Int_t nz,
 			     Double_t sizeX, Double_t sizeY, Double_t sizeZ)
   : TVpBox(name, index, sizeX, sizeY, sizeZ)
 {
@@ -155,8 +155,8 @@ TVpVoxelArray::TVpVoxelArray(Char_t *name, Int_t index,Int_t nx, Int_t ny, Int_t
 }
   
 //______________________________________________________________________________
-TVpVoxelArray::TVpVoxelArray(Char_t *fileNameVAM,
-			     Char_t *name, Int_t index)
+TVpVoxelArray::TVpVoxelArray(const Char_t *fileNameVAM,
+			     const Char_t *name, Int_t index)
   : TVpBox(name, index, 0.0, 0.0, 0.0)
 {
   // Constructor with full initialization from the VAM file.
@@ -1542,7 +1542,7 @@ void TVpVoxelArray::PrintVoiTable() const
 }
 
 //______________________________________________________________________________
-Int_t TVpVoxelArray::ReadVPFile(Char_t *filename, Int_t verbose)
+Int_t TVpVoxelArray::ReadVPFile(const Char_t *filename, Int_t verbose)
 {
   // Read Voxel Phantom File. Read tissue value for each voxel from
   // an ASCII data file filename.
@@ -2113,7 +2113,7 @@ TH2F *TVpVoxelArray::GetCtnSliceZ(Int_t slice, TVpSpectrum *spectrum) const
 }
 
 //______________________________________________________________________________
-void TVpVoxelArray::WritePGMZ(Char_t *filePrefix)
+void TVpVoxelArray::WritePGMZ(const Char_t *filePrefix)
 {
   // Write the TVpVoxelArray in the PGM Data Format
 
@@ -2148,7 +2148,7 @@ void TVpVoxelArray::WritePGMZ(Char_t *filePrefix)
 }
 
 //______________________________________________________________________________
-Int_t TVpVoxelArray::ReadPGMFile(Char_t *filePrefix, Int_t verbose)
+Int_t TVpVoxelArray::ReadPGMFile(const Char_t *filePrefix, Int_t verbose)
 {
   FILE *fp;
   Int_t c;
@@ -3137,7 +3137,7 @@ void TVpVoxelArray::RotateZ90()
 
 
 //______________________________________________________________________________
-Int_t TVpVoxelArray::WriteVAMFile(Char_t *fileName)
+Int_t TVpVoxelArray::WriteVAMFile(const Char_t *fileName)
 {
   // Write the VAM file.  See ReadVAMFile() for the format description.
   //
@@ -3166,7 +3166,7 @@ Int_t TVpVoxelArray::WriteVAMFile(Char_t *fileName)
 }
 
 //______________________________________________________________________________
-Int_t TVpVoxelArray::WriteVANFile(Char_t *fileName)
+Int_t TVpVoxelArray::WriteVANFile(const Char_t *fileName)
 {
   // Write the VAN file.  See ReadVANFile for the format description.
   //

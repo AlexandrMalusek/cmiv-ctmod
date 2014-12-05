@@ -69,7 +69,7 @@ class TVpMaterialFileData
   inline void        SetUseSf(Int_t useISF = 1);
 
   TGraph *GetGraphFileData(EFileData fileData) const;
-  void DrawGraphFileData(EFileData fileData, Char_t *opt = "AP") const;
+  void DrawGraphFileData(EFileData fileData, const Char_t *opt = "AP") const;
 
   ClassDef(TVpMaterialFileData,1) // Material data read from files, implementation class
 };

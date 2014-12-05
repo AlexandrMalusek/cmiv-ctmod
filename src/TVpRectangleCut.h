@@ -30,9 +30,9 @@ class TVpRectangleCut
   TH2F *GetMCSSum(TVpGeometry *geometry, Double_t energy,
 		  Int_t csSum, Int_t ndivision = 1);
   TH2F *RegisterSourceParticle(TVpSource *source, Long_t nparticles);
-  Int_t WriteLac(Char_t *filename, TVpGeometry *geometry, Double_t energy,
+  Int_t WriteLac(const Char_t *filename, TVpGeometry *geometry, Double_t energy,
 		 Int_t ndivision = 1);
-  Int_t WriteMCSSum(Char_t *filename, TVpGeometry *geometry, Double_t energy,
+  Int_t WriteMCSSum(const Char_t *filename, TVpGeometry *geometry, Double_t energy,
 		    Int_t csSum, Int_t ndivision = 1);
   void  Draw();
   void  DrawSourceParticle(TVpSource *source, Long_t nparticles);

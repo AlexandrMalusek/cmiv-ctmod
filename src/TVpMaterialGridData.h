@@ -103,7 +103,7 @@ class TVpMaterialGridData
   
   TH1F *GetHistGridData(EGridGraphType graphType);
   TGraph *GetGraphGridData(EGridGraphType graphType) const;
-  void DrawGraphGridData(EGridGraphType graphType, Char_t *opt = "AP") const;
+  void DrawGraphGridData(EGridGraphType graphType, const Char_t *opt = "AP") const;
 
   ClassDef(TVpMaterialGridData,1) // Material grid data, implementation class
 };

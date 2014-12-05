@@ -491,7 +491,7 @@ TGraph *TVpMaterialGridData::GetGraphGridData(EGridGraphType graphType) const
 }
 
 //______________________________________________________________________________
-void TVpMaterialGridData::DrawGraphGridData(EGridGraphType graphType, Char_t *opt) const
+void TVpMaterialGridData::DrawGraphGridData(EGridGraphType graphType, const Char_t *opt) const
 {
   // Draw graph
 

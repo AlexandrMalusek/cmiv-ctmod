@@ -84,7 +84,7 @@ TVpPointDetectorArray::TVpPointDetectorArray
 }
 
 //______________________________________________________________________________
-TVpPointDetectorArray::TVpPointDetectorArray(Char_t *fileName)
+TVpPointDetectorArray::TVpPointDetectorArray(const Char_t *fileName)
 {
   // Constructor which reads all data from a file name.
 
@@ -162,7 +162,7 @@ void TVpPointDetectorArray::SetActiveTransformation(TVpMatrix3x3 *rotMat,
 }
 
 //______________________________________________________________________________
-Int_t TVpPointDetectorArray::WritePdaFile(Char_t *fileName, Int_t withErrors)
+Int_t TVpPointDetectorArray::WritePdaFile(const Char_t *fileName, Int_t withErrors)
 {
   // Write the file in PDA format
 
@@ -214,7 +214,7 @@ Int_t TVpPointDetectorArray::WritePdaFile(FILE *fp, Int_t withErrors)
 }
 
 //______________________________________________________________________________
-Int_t TVpPointDetectorArray::ReadPdaFile(Char_t *fileName)
+Int_t TVpPointDetectorArray::ReadPdaFile(const Char_t *fileName)
 {
   // Read the file in PDA format. Allocate space for point detectors.
 
@@ -376,7 +376,7 @@ void TVpPointDetectorArray::PrintYProfile(Int_t sliceX, std::ostream &out) const
 }
 
 //______________________________________________________________________________
-Int_t TVpPointDetectorArray::WriteValuesToTabFile(Char_t *fileName)
+Int_t TVpPointDetectorArray::WriteValuesToTabFile(const Char_t *fileName)
 {
   // Write values to a file in Tab format
 
@@ -411,7 +411,7 @@ Int_t TVpPointDetectorArray::WriteValuesToTabFile(Char_t *fileName)
 }
 
 //______________________________________________________________________________
-Int_t TVpPointDetectorArray::WriteErrorsToTabFile(Char_t *fileName)
+Int_t TVpPointDetectorArray::WriteErrorsToTabFile(const Char_t *fileName)
 {
   // Write errors (standard deviation) to a file in Tab format
 

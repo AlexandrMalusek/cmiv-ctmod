@@ -69,9 +69,9 @@ class TVpRunManager
   void              PrintCtmodRunFile();
   void              SetFomHistoryStep(Long_t fomHistoryStep);
 
-  void              PedEventInitialize(Char_t *fileName);
+  void              PedEventInitialize(const Char_t *fileName);
   void              PedEventClose();
-  void              FomEventInitialize(Char_t *fileName);
+  void              FomEventInitialize(const Char_t *fileName);
   void              FomEventClose();
 
   ClassDef(TVpRunManager,1) // Run manager

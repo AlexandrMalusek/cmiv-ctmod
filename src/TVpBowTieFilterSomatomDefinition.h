@@ -12,7 +12,7 @@ class TVpBowTieFilterSomatomDefinition : public TVpBowTieFilter1dTable
   TVpMaterial  *fMatTiPtr;        //! filter material, titanium
 
   TVpBowTieFilterSomatomDefinition();
-  TVpBowTieFilterSomatomDefinition(Char_t *fileNameBFT, TVpMaterial *matTiPtr = 0);
+  TVpBowTieFilterSomatomDefinition(const Char_t *fileNameBFT, TVpMaterial *matTiPtr = 0);
   virtual ~TVpBowTieFilterSomatomDefinition();
 
   virtual Double_t GetTransmission(Double_t energy, const TVpVector3 &directionL) const;

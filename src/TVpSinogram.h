@@ -15,14 +15,14 @@ class TVpSinogram
   TVpSinogram(Int_t numOfProjections, TVpSetupTomograph *setupTomographPtr);
   virtual ~TVpSinogram();
 
-  Int_t    WriteFile(Char_t *fileName);
+  Int_t    WriteFile(const Char_t *fileName);
   void     CalculatePrimary();
   void     CalculateScatter(Long_t numOfHistories = 10000);
   Int_t    GetNumOfProjections();
   Int_t    GetNumOfDetectors();
 
-  TH2F *GetProbImage(Char_t *hname = "Prob Sinogram");
-  TH2F *GetWopImage(Char_t *hname = "Wop Sinogram");
+  TH2F *GetProbImage(const Char_t *hname = "Prob Sinogram");
+  TH2F *GetWopImage(const Char_t *hname = "Wop Sinogram");
 
   ClassDef(TVpSinogram,1) // Sinogram calculation
 };

@@ -108,7 +108,7 @@ void TVpSourceIso::Draw(Int_t option, Int_t nParticles) const
   // Draw the source.
 
   TVpSource::Draw(option, nParticles);
-  if (option & TVpSource::kDrawShape != 0)
+  if ((option & TVpSource::kDrawShape) != 0)
     {
       // FIX
     }
