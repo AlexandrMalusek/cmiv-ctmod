@@ -1,0 +1,59 @@
+# Format: VAN 2.0
+0	material/air.mat			outside phantom
+1	material/skin.mat			skin
+2	material/brain.mat			brain
+3	material/soft_tissue.mat		cord
+4	material/skeleton_spongiosa.mat		skull
+5	material/skeleton_spongiosa.mat		spine
+6	material/skeleton_spongiosa.mat		ribcage
+7	material/skeleton_spongiosa.mat		pelvis
+8	material/skeleton_spongiosa.mat		long bones
+9	material/soft_tissue.mat		skeletal muscle
+10	material/lung.mat			lungs
+11	material/heart.mat			heart
+12	material/liver.mat			liver
+13	material/soft_tissue.mat		gall bladder
+14	material/kidney.mat			kidney
+15	material/soft_tissue.mat		pharynx
+16	material/soft_tissue.mat		esophagus
+17	material/soft_tissue.mat		stomach
+18	material/soft_tissue.mat		small bowel
+19	material/soft_tissue.mat		colon
+20	material/pancreas.mat			pancreas
+21	material/soft_tissue.mat		adrenals
+22	material/soft_tissue.mat		fat
+23	material/blood.mat			blood pool
+24	material/air.mat			gas
+25	material/soft_tissue.mat		fluid
+26	material/soft_tissue.mat		bone marrow
+27	material/soft_tissue.mat		thyroid
+28	material/soft_tissue.mat		trachea
+29	material/soft_tissue.mat		cartilage
+30	material/spleen.mat			spleen
+31	material/soft_tissue.mat		urine
+32	material/soft_tissue.mat		feces
+33	material/testis.mat			testes
+34	material/soft_tissue.mat		prostate
+35	material/soft_tissue.mat		rectum
+36	material/soft_tissue.mat		diaphragm
+37	material/bladder.mat			bladder
+38	material/soft_tissue.mat		uterus
+39	material/ovary.mat			ovaries
+40	material/soft_tissue.mat		couch top
+41	material/soft_tissue.mat		fatty tissue
+42	material/breast.mat			female breast
+43	material/soft_tissue.mat		lesion
+44	material/soft_tissue.mat		dens of axis
+45	material/soft_tissue.mat		jaw bone
+46	material/soft_tissue.mat		spinal canal
+47	material/soft_tissue.mat		hard palate
+48	material/soft_tissue.mat		cerebellum
+49	material/soft_tissue.mat		tongue
+50	material/soft_tissue.mat		medulla oblongo
+51	material/soft_tissue.mat		pons
+52	material/soft_tissue.mat		sinus
+53	material/soft_tissue.mat		optic nerve
+54	material/soft_tissue.mat		cerebral falx
+55	material/soft_tissue.mat		eye
+56	material/soft_tissue.mat		lens
+57	material/skeleton_spongiosa.mat		teeth
