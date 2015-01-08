@@ -1,0 +1,2 @@
+Unix.*.Root.DynamicPath:  .:$(ROOTSYS)/lib:$(CTMODSYS)/lib
+Unix.*.Root.MacroPath:    .:$(CTMODSYS)/macros/analysis

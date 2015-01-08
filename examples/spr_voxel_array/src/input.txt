@@ -1,0 +1,6 @@
+10000	#_Number_of_simulated_particles
+120	#_Spectrum_voltage_in_kV
+34.0	#_VoxelArrayCenterX_in_cm
+18.0	#_VoxelArrayCenterY_in_cm
+11.0	#_VoxelArrayCenterZ_in_cm
+0.2	#_Beam_width_in_cm

@@ -1,0 +1,8 @@
+<TVpDimensionsTomograph>
+900     # NDL - num. of det. elements in the perp. dir.
+1       # NDW - num. of det. elements in the axial dir.
+70      # SAD - source-axis distance in cm
+115     # SDD - source-detector distance in cm
+90      # DAL - det. array length in the  perp. dir. in cm
+10      # DAW - det. array width (in the axial dir.) in cm
+</TVpDimensionsTomograph>
